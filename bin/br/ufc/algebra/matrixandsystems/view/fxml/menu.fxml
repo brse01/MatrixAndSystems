@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane prefHeight="700" prefWidth="1400" fx:id="borderPane"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="br.ufc.algebra.matrixandsystems.view.controller.MenuController">
+	<left>
+		<VBox fx:id="menuRoot" BorderPane.alignment="CENTER">
+			<children>
+				<HBox prefHeight="100.0" prefWidth="200.0">
+					<children>
+						<Label fx:id="title" prefHeight="20.0" prefWidth="123.0"
+							text="App" textAlignment="CENTER">
+							<font>
+								<Font name="Apple Braille" size="16.0" />
+							</font>
+						</Label>
+						<ImageView fx:id="menuButton" fitHeight="18.0" fitWidth="35.0"
+							onMouseClicked="#setOnMenuClick" pickOnBounds="true"
+							preserveRatio="true">
+							<cursor>
+								<Cursor fx:constant="HAND" />
+							</cursor>
+						</ImageView>
+					</children>
+
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</VBox.margin>
+				</HBox>
+
+				<VBox prefHeight="200.0" prefWidth="100.0">
+					<children>
+						<ImageView fx:id="portrait" fitHeight="150.0" fitWidth="200.0"
+							pickOnBounds="true" preserveRatio="true">
+							<VBox.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</VBox.margin>
+						</ImageView>
+						<Label alignment="CENTER" contentDisplay="CENTER" text="Bruno Sousa">
+							<VBox.margin>
+								<Insets bottom="5.0" left="35.0" right="5.0" top="5.0" />
+							</VBox.margin>
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+						</Label>
+					</children>
+				</VBox>
+
+				<Separator fx:id="sep_1" prefWidth="200.0" />
+
+				<HBox onMouseClicked="#setSistemasSelected" prefHeight="48.0"
+					prefWidth="190.0">
+					<children>
+						<Label text="Sistemas">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+							<HBox.margin>
+								<Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+							</HBox.margin>
+						</Label>
+					</children>
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</VBox.margin>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+				</HBox>
+
+				<Separator fx:id="sep_2" prefWidth="200.0" />
+
+				<HBox onMouseClicked="#setIMatrizSelected" prefHeight="48.0"
+					prefWidth="190.0">
+					<children>
+						<Label text="I Matriz">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+							<HBox.margin>
+								<Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+							</HBox.margin>
+						</Label>
+					</children>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</VBox.margin>
+				</HBox>
+
+				<Separator fx:id="sep_3" prefWidth="200.0" />
+
+				<HBox onMouseClicked="#setIIMatrizSelected" prefHeight="48.0"
+					prefWidth="190.0">
+					<children>
+						<Label text="II Matriz">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+							<HBox.margin>
+								<Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+							</HBox.margin>
+						</Label>
+					</children>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</VBox.margin>
+				</HBox>
+
+				<Separator fx:id="sep_4" prefWidth="200.0" />
+
+				<HBox onMouseClicked="#logoutSelected" prefHeight="48.0"
+					prefWidth="190.0">
+					<children>
+						<ImageView fx:id="logOut" fitHeight="30.0" fitWidth="43.0"
+							pickOnBounds="true" preserveRatio="true">
+							<HBox.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+							</HBox.margin>
+						</ImageView>
+						<Region />
+						<Label text="Logout">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+							<HBox.margin>
+								<Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+							</HBox.margin>
+						</Label>
+					</children>
+					<cursor>
+						<Cursor fx:constant="HAND" />
+					</cursor>
+					<VBox.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</VBox.margin>
+				</HBox>
+
+				<Separator fx:id="sep_5" prefWidth="200.0" />
+
+			</children>
+			<BorderPane.margin>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+			</BorderPane.margin>
+			<padding>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+			</padding>
+
+		</VBox>
+	</left>
+	<center>	
+		<Pane fx:id="pane" prefHeight="800.0" prefWidth="700.0"
+			BorderPane.alignment="CENTER" />
+	</center>		
+</BorderPane>
